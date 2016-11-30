@@ -23,6 +23,7 @@
 		1786C9F51DEF0B1E00695A3E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1786C9F41DEF0B1E00695A3E /* UIKit.framework */; };
 		1786C9F71DEF0B2C00695A3E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1786C9F61DEF0B2C00695A3E /* Accelerate.framework */; };
 		1786C9F91DEF0B3700695A3E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1786C9F81DEF0B3700695A3E /* AssetsLibrary.framework */; };
+		1786C9FB1DEF2E6C00695A3E /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1786C9FA1DEF2E6C00695A3E /* haarcascade_frontalface_alt.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		1786C9F41DEF0B1E00695A3E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1786C9F61DEF0B2C00695A3E /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		1786C9F81DEF0B3700695A3E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		1786C9FA1DEF2E6C00695A3E /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_alt.xml; path = ../../haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 		1786C9B51DEEF6B100695A3E /* OpenCVGrayscale */ = {
 			isa = PBXGroup;
 			children = (
+				1786C9FA1DEF2E6C00695A3E /* haarcascade_frontalface_alt.xml */,
 				1786C9E91DEEF6E500695A3E /* opencv2.framework */,
 				1786C9B91DEEF6B100695A3E /* AppDelegate.h */,
 				1786C9BA1DEEF6B100695A3E /* AppDelegate.m */,
@@ -289,6 +292,7 @@
 			files = (
 				1786C9C61DEEF6B100695A3E /* LaunchScreen.storyboard in Resources */,
 				1786C9C31DEEF6B100695A3E /* Assets.xcassets in Resources */,
+				1786C9FB1DEF2E6C00695A3E /* haarcascade_frontalface_alt.xml in Resources */,
 				1786C9C11DEEF6B100695A3E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
