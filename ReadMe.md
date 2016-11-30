@@ -8,7 +8,7 @@ In diesen Beispielen wird die Frontkamera verwendet.
 
 >self._videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
 
-Um die Rückkamera zu verwenden ändern Sie die **defaultAVCaptureDevicePosition** in **viewDidLoad** auf ** AVCaptureDevicePositionBack**
+Um die Rückkamera zu verwenden ändern Sie die **defaultAVCaptureDevicePosition** in **viewDidLoad** auf **AVCaptureDevicePositionBack**
 
 >self._videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionBack;
 
@@ -16,9 +16,9 @@ Um die Auflösung der Bilder bei der Aufnahme zu verändern wählen Sie die ents
 
 >self._videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset352x288;
 
-oder 1280x720
+oder 
 
->self._videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset352x288;
+>self._videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset1280x720;
 
 Bitte beachten Sie, dass die Auflösung einen Einfluss auf die Performance hat.
 
@@ -36,7 +36,7 @@ Vergessen Sie nicht das Bild am Schluss wieder nach **BGR** zu konvertieren um e
 
 >bitwise_not(image_copy, image_copy);
 
-** bitwise_not** invertiert alle Werte innerhalb der Bildmatrix
+**bitwise_not** invertiert alle Werte innerhalb der Bildmatrix
 
 ##Sample 3: Threshold
 
@@ -50,7 +50,7 @@ Es gibt in OpenCV 5 Arten des Thresholds.
 
 >threshold( image_copy, image_copy, 128, 255, 0 );
 
-** threshold** führt einen Threshold auf das Bild aus. _128_ ist der Grenzwert, _255_ der Maximalwert und _0_ die Art des Thresholds
+**threshold** führt einen Threshold auf das Bild aus. _128_ ist der Grenzwert, _255_ der Maximalwert und _0_ die Art des Thresholds
 
 ##Sample 4: Canny Edges
 
@@ -64,7 +64,7 @@ Deklaration des Classifiers im Header
 Laden des Classifiers aus einer Datei in **viewDidLoad**
 >NSString* cascadePath = [[NSBundle mainBundle]pathForResource:@"haarcascade_frontalface_alt" ofType:@"xml"];
     
-faceDetector.load([cascadePath UTF8String]);
+>faceDetector.load([cascadePath UTF8String]);
 
 >blur(image_copy, image_copy, cv::Size(3, 3) );
     
@@ -77,7 +77,7 @@ faceDetector.load([cascadePath UTF8String]);
 >        cv::Point top_left(face.x, face.y);
 >        cv::Point bottom_right = top_left + cv::Point(face.width, face.height);
 >        
->        Scalar magenta = Scalar(255, 0, 255);
+        Scalar magenta = Scalar(255, 0, 255);
 >        cv::rectangle(image, top_left, bottom_right, magenta);
 >}
 
